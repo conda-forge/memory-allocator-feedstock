@@ -1,5 +1,5 @@
 {% set name = "memory-allocator" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/memory_allocator-{{ version }}.tar.gz
-  sha256: 514711ef57b778040842999633e01543156d807beb363688947a39a54454967d
+  sha256: 5641bea96b9e59a173639c118c2745fe16014c60012117ddf29c18abbb713408
 
 build:
   number: 0
-  skip: true   # [py2k]
+  skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
