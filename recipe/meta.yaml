@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/memory_allocator-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/memory_allocator-{{ version }}.tar.gz
   sha256: 13805c2ae1c01b7489fab5e8eac9361662b4f2c02412e3652eece48ff6953162
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
